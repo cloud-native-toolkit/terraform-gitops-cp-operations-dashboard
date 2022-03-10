@@ -1,0 +1,11 @@
+name: gitops-cp-operations-dashboard
+type: gitops
+description: >-
+  Module to populate a gitops repo with the resources to provision
+  cp-operations-dashboard
+tags:
+  - tools
+  - gitops
+versions: []
+softwareProvider: ibm-cp
+id: github.com/cloud-native-toolkit/terraform-gitops-cp-operations-dashboard
