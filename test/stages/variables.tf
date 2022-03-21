@@ -70,8 +70,6 @@ variable "git_username" {
 }
 
 
-variable "cp_entitlement_key" {
-}
 
 // Variables added below this line for OperationsDashboard 
 
