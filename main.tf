@@ -1,5 +1,5 @@
 locals {
-  name                   = "cp4i-opsdashboard"
+  name                   = "opsdashboard"
   subscription_name      = "ibm-opsdashboard-operator"
   instance_name          = "opsdashboard"
   bin_dir                = module.setup_clis.bin_dir
