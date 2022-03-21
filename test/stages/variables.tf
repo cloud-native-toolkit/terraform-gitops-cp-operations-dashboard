@@ -120,15 +120,15 @@ variable "filestorageclass" {
   type = string
   description = "For assetDataVolume we need RWX volume."
   
-  default="ibmc-file-gold-gid"
+  default="portworx-rwx-gp-sc"
   
 }
 
 variable "blockstorageclass" {
   type = string
-  description = "For assetDataVolume we need RWX volume."
+  description = "For assetDataVolume we need RWO volume."
  
-  default="ibmc-block-gold"
+  default="portworx-db2-rwo-sc"
   
 }
 
