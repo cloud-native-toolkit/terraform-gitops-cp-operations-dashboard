@@ -69,6 +69,14 @@ variable "gitops_namespace" {
 variable "git_username" {
 }
 
+variable "kubeseal_namespace" {
+  default = "sealed-secrets"
+}
+
+variable "cp_entitlement_key" {
+}
+
+
 
 
 // Variables added below this line for OperationsDashboard 
@@ -79,11 +87,6 @@ variable "subscription_namespace" {
   default     = "openshift-operators"
 }
 
-variable "cp_entitlement_key" {
-  type        = string
-  description = "The entitlement key required to access Cloud Pak images"
-  sensitive   = true
-}
 
 variable "channel" {
   type        = string
