@@ -50,7 +50,7 @@ locals {
     }
   }
 
-  values_file = "values-${var.server_name}.yaml"
+  values_file = "values.yaml"
   layer              = "services"
   type               = "instances"
   application_branch = "main"
