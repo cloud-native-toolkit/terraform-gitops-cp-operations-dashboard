@@ -84,7 +84,7 @@ variable "subscription_namespace" {
   default     = "openshift-operators"
 }
 
-variable "entitlement_key" {
+variable "cp_entitlement_key" {
   type        = string
   description = "The entitlement key required to access Cloud Pak images"
   sensitive   = true
