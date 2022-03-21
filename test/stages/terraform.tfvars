@@ -12,3 +12,4 @@ cp_entitlement_key = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJQk0gTWFya2V0cGxhY2UiLCJpY
 entitlement_key = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJQk0gTWFya2V0cGxhY2UiLCJpYXQiOjE1OTA2NDg4MzMsImp0aSI6ImVmZmMzZGE5OGMxMjQxNmM5ZTcyNTYyNDM4OTU5NDkzIn0.PeSVKq06j2nSw8sqRIQDMVq4gQ1g2mJXQyv443WNlCU"
 filestorageclass = "ibmc-file-gold-gid"
 blockstorageclass = "ibmc-block-gold"
+login_token = "sha256~X-JbTOSncEQh2dm9r_yqvXnVI7IJYQJd6JLuAyoJzxg"
