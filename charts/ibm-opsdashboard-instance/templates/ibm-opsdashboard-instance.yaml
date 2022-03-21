@@ -1,0 +1,16 @@
+apiVersion: integration.ibm.com/v1beta2
+kind: OperationsDashboard
+metadata:
+  name: {{ .Values.ibmopsdashboardinstance.opsdashboard.name }}
+spec:
+  license:
+    accept: true
+    license: {{ .Values.ibmopsdashboardinstance.opsdashboard.spec.license.license }}
+  storage:
+    configDbVolume:
+      class: {{ .Values.ibmopsdashboardinstance.opsdashboard.spec.storage.configDbVolume.class }}
+    sharedVolume:
+      class: {{ .Values.ibmopsdashboardinstance.opsdashboard.spec.storage.sharedVolume.class }}
+    tracingVolume:
+      class: {{ .Values.ibmopsdashboardinstance.opsdashboard.spec.storage.tracingVolume.class }}
+  version: {{ .Values.ibmopsdashboardinstance.opsdashboard.spec.version }}

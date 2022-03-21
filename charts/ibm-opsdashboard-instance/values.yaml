@@ -1,0 +1,16 @@
+ibmopsdashboardinstance:
+  opsdashboard:
+    name: opsdashboard
+    spec:
+      license:
+        accept: true
+        license: CP4I
+      version: "2021.4.1"
+      storage:
+        configDbVolume:
+          class: "ibmc-file-gold-gid"
+        sharedVolume:
+          class: "ibmc-file-gold-gid"
+        tracingVolume:
+          class: "ibmc-block-gold"
+ 
