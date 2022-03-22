@@ -58,8 +58,9 @@ module "gitops" {
 }
 
 resource null_resource gitops_output {
-  provisioner "local-exec" {
   depends_on=[module.gitops]
+  provisioner "local-exec" {
+  
     command = "echo -n '${module.gitops.config_repo}' > git_repo"
   }
 
@@ -161,8 +162,10 @@ module "gitops_module" {
 
 
 resource null_resource write_outputs {
+
+  depends_on = [module.gitops_module]
   provisioner "local-exec" {
-    depends_on = [module.gitops_module]
+    
     command = "echo \"$${OUTPUT}\" > gitops-output.json"
    
 
