@@ -65,7 +65,7 @@ resource null_resource gitops_output {
   }
 
   provisioner "local-exec" {
-  depends_on=[module.gitops]
+  
     command = "echo -n '${module.gitops.config_token}' > git_token"
   }
 }
