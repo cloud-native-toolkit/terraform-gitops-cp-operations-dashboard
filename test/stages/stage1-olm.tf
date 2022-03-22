@@ -1,5 +1,8 @@
 module "olm" {
    source = "github.com/ibm-garage-cloud/terraform-software-olm.git" 
+
+   depends_on = [module.gitops]
+
    cluster_config_file = module.dev_cluster.config_file_path
    cluster_type = module.dev_cluster.platform.type_code
    cluster_version = module.dev_cluster.platform.version
