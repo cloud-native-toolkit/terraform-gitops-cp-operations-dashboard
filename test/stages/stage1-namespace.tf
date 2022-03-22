@@ -1,7 +1,7 @@
 module "gitops_namespace" {
   source = "github.com/cloud-native-toolkit/terraform-gitops-namespace.git"
 
-  depends_on = [module.cp4i-dependencies]
+  
 
   gitops_config = module.gitops.gitops_config
   git_credentials = module.gitops.git_credentials
