@@ -1,7 +1,7 @@
 module "cp_catalogs" {
   source = "github.com/cloud-native-toolkit/terraform-gitops-cp-catalogs.git"
 
-  depends_on = [module.gitops]
+  depends_on = [module.olm]
 
   gitops_config = module.gitops.gitops_config
   git_credentials = module.gitops.git_credentials
