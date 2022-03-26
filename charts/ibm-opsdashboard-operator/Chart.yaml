@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: ibm-opsdashboard-operator
 description: A Helm chart for Kubernetes
 type: application
