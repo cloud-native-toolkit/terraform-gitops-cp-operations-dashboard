@@ -86,7 +86,7 @@ resource "null_resource" "setup_subscription_gitops" {
     gitops_config   = yamlencode(var.gitops_config)
     bin_dir         = local.bin_dir
   }
-*/
+
   provisioner "local-exec" {
     command = "${self.triggers.bin_dir}/igc gitops-module '${self.triggers.name}' -n '${self.triggers.namespace}' --contentDir '${self.triggers.yaml_dir}' --serverName '${self.triggers.server_name}' -l '${self.triggers.layer}' --type '${self.triggers.type}'"
 
@@ -106,7 +106,7 @@ resource "null_resource" "setup_subscription_gitops" {
     }
   }
 }
-
+*/
 module "pull_secret" {
   source = "github.com/cloud-native-toolkit/terraform-gitops-pull-secret"
 
