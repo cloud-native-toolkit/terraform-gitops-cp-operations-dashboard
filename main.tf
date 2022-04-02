@@ -1,7 +1,7 @@
 locals {
   name                   = "opsdashboard"
   subscription_name      = "ibm-opsdashboard-operator"
-  instance_name          = "ibm-opsdashboard-instance"
+  instance_name          = "opsdashboard-instance"
   bin_dir                = module.setup_clis.bin_dir
   subscription_chart_dir = "${path.module}/charts/${local.subscription_name}"
   subscription_yaml_dir  = "${path.cwd}/.tmp/${local.name}/chart/${local.subscription_name}"
