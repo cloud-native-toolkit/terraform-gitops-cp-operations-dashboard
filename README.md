@@ -1,6 +1,6 @@
 # IBM Cloud Pak Operations-Dashboard module 
 
-Module to populate a gitops repository with the Operations Dashboard operator and instance from IBM Cloud Pak for Integration.
+Module to populate a gitops repository with the Operations Dashboard operator and instance from IBM Cloud Pak for Integration. Platform Navigator must be deployed before deploying Operations Dashboard.
 
 ## Software dependencies
 
