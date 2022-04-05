@@ -46,8 +46,8 @@ module "gitops_module" {
   license = module.cp4i-dependencies.operations_dashboard.license
   entitlement_key = module.cp_catalogs.entitlement_key
   #cp_entitlement_key = module.cp_catalogs.entitlement_key
-  filestorageclass = var.filestorageclass
-  blockstorageclass = var.blockstorageclass
+  filestorageclass = "portworx-rwx-gp-sc"
+  blockstorageclass = "portworx-db2-rwo-sc"
 }
 
 ```
