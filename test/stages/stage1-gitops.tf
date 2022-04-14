@@ -1,6 +1,8 @@
 module "gitops" {
   source = "github.com/cloud-native-toolkit/terraform-tools-gitops"
 
+  depends_on = [module.cert]
+
   host = var.git_host
   type = var.git_type
   org  = var.git_org

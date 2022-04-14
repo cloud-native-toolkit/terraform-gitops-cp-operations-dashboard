@@ -75,3 +75,63 @@ variable "kubeseal_namespace" {
 
 variable "cp_entitlement_key" {
 }
+
+
+
+
+// Variables added below this line for OperationsDashboard 
+
+variable "subscription_namespace" {
+  type        = string
+  description = "The namespace where the application should be deployed"
+  default     = "openshift-operators"
+}
+
+
+variable "channel" {
+  type        = string
+  description = "The channel from which the AssetRepository should be installed"
+  default     = "v2.5"
+}
+
+variable "catalog" {
+  type        = string
+  description = "The catalog source that should be used to deploy the operator"
+  default     = "ibm-operator-catalog"
+}
+
+variable "catalog_namespace" {
+  type        = string
+  description = "The namespace where the catalog has been deployed"
+  default     = "openshift-marketplace"
+}
+
+variable "license" {
+  type        = string
+  description = "The license string that should be used for the instance"
+  default     = "CP4I"
+}
+
+variable "instance_version" {
+  type        = string
+  description = "The version of the Asset Repository should be installed"
+  default     = "2021.4.1"
+}
+
+
+variable "filestorageclass" {
+  type = string
+  description = "For assetDataVolume we need RWX volume."
+  
+  default="portworx-rwx-gp-sc"
+  
+}
+
+variable "blockstorageclass" {
+  type = string
+  description = "For assetDataVolume we need RWO volume."
+ 
+  default="portworx-db2-rwo-sc"
+  
+}
+
